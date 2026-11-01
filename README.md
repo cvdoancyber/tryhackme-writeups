@@ -27,7 +27,7 @@ Lộ trình bao gồm quy trình vận hành SOC, sử dụng các công cụ gi
 
 | Section | Module | Số Room |
 |:---:|---|:---:|
-| 01 | Blue Team Introduction | 4 |
+| 01 | [Blue Team Introduction](#section-01--blue-team-introduction) | 4 |
 | 02 | SOC Team Internals | 5 |
 | 03 | Core SOC Solutions | 5 |
 | 04 | Cyber Defence Frameworks | 6 |
@@ -53,8 +53,8 @@ Giới thiệu những kiến thức cơ bản về Blue Team, vai trò của SO
 
 ### Danh sách bài học
 
-- [ ] 01. Junior Security Analyst Intro
-- [ ] 02. SOC Role in Blue Team
+- [ ] 01. [Junior Security Analyst Intro](#01-junior-security-analyst-intro)
+- [ ] 02. [SOC Role in Blue Team](#02-soc-role-in-blue-team)
 - [ ] 03. Humans as Attack Vectors
 - [ ] 04. Systems as Attack Vectors
 
@@ -67,6 +67,50 @@ Giới thiệu những kiến thức cơ bản về Blue Team, vai trò của SO
 - Các phương thức tấn công vào hệ thống thông tin.
 - Vai trò của giám sát và phát hiện sớm các mối đe dọa.
 
+### 01. Junior Security Analyst Intro
+
+#### Task 1 - Junior Security Analyst Journey
+
+Một chuyên viên SOC Tier 1 sẽ làm việc trong một nhóm SOC 24/7:
+- Theo dõi và kiểm tra các cảnh báo an ninh mạng.
+- Tham gia thảo luận và các hội thảo về SOC.
+- Hợp tác với các nhóm bảo mật khác trong công ty.
+- Liên tục cập nhật và phân tích các phương pháp tấn công và phòng thủ mới.
+
+#### Task 3 - A Day in the Life of a Security Analyst
+
+- Ta có một dashboard như sau:
+
+![](./SOC_Tier_1/images/SECTION_01/01_Junior_Security_Analyst_Intro/Task_3/1.png)
+
+**Câu hỏi 1: Địa chỉ IP độc hại trong các cảnh báo là gì?**
+Đáp án:
+
+```bash
+221.181.185.159`
+```
+
+- Dựa vào thông tin trong cơ sở dữ liệu chúng ta có thể biết được các thông tin từ địa chỉ IP độc hại này:
+
+![](./SOC_Tier_1/images/SECTION_01/01_Junior_Security_Analyst_Intro/Task_3/2.png)
+
+**Câu hỏi 2: Bạn sẽ báo cáo cảnh báo về địa chỉ IP độc hại cho ai?**
+
+Đáp án:
+
+```bash
+SOC Team Lead
+```
+
+![](./SOC_Tier_1/images/SECTION_01/01_Junior_Security_Analyst_Intro/Task_3/3.png)
+
+**Câu hỏi 3: Bạn nhận được thông báo gì sau khi chặn địa chỉ IP trên tường lửa?**
+
+Chúng ta tiến hành block IP độc hại
+
+![](./SOC_Tier_1/images/SECTION_01/01_Junior_Security_Analyst_Intro/Task_3/4.png)
+
+### 02. SOC Role in Blue Team
 ---
 
 ## SECTION 02 – SOC TEAM INTERNALS
