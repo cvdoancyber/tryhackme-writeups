@@ -111,6 +111,47 @@ Chúng ta tiến hành block IP độc hại
 ![](./images/SECTION_01/01_Junior_Security_Analyst_Intro/Task_3/4.png)
 
 ### 02. SOC Role in Blue Team
+
+#### Task 1 - Introduction
+
+Trong bài học này chúng ta sẽ tìm hiểu về:
+- Khái niệm và mục đích của Blue Team.
+- Vị trí của SOC trong cấu trúc công ty.
+- Lộ trình của chuyên viên SOC Tier 1.
+
+#### Task 2 - Security Hierarchy
+
+**Hệ thống phân cấp bảo mật**
+
+- Mỗi công ty đều có sự ưu tiên khác nhau về an ninh mạng. Vì vậy mỗi công ty sẽ có phương pháp bảo mật và cấu trúc đội ngũ an ninh mạng khác nhau.
+- Chúng ta cùng xem xét một ví dụ:
+
+![](./images/SECTION_01/02_SOC_Role_in_Blue_Team/Task_2/1.png)
+
+- Nhìn vào sơ đồ trên, các nhà điều hành cấp cao như CEO thường tập trung vào các mục tiêu kinh doanh toàn cầu và không quản lý các khía cạnh kỹ thuật. Đó là lý do tại sao họ thuê một Giám đốc An ninh Thông tin (CISO) hoặc một vị trí tương đương, người hiểu rõ nhu cầu kinh doanh và có thể tạo ra các bộ phận an ninh phù hợp nhất.
+
+**Bộ phận an ninh**
+
+- Giám đốc An ninh Thông tin (CISO) sẽ quản lý nhiều nhóm bảo mật khác nhau:
++ Red Team: Các chuyên gia bảo mật tấn công, chuyên gia kiểm thử xâm nhập (Pentester) hoặc hacker mũ trắng (Ethical Hacker), có nhiệm vụ tìm kiếm và phát hiện các lỗ hổng, điểm yếu bảo mật trong hệ thống.
++ GRC Team: Các chuyên gia quản lý chính sách và đảm bảo tuân thủ các quy định như PCI DSS.
++ Blue Team: Các chuyên gia an ninh phòng thủ như chuyên viên phân tích SOC, kỹ sư hoặc người ứng phó sự cố.
+
+**Câu hỏi 1: Vai trò cấp cao nào thường đưa ra các quyết định quan trọng về an ninh mạng?**
+
+Đáp án:
+```
+CISO
+```
+
+**Câu hỏi 2: Tên gọi thông dụng cho các vị trí như chuyên viên phân tích và kỹ sư SOC là gì?**
+
+Đáp án:
+```
+Blue Team
+```
+
+#### 
 ---
 
 ## SECTION 02 – SOC TEAM INTERNALS
