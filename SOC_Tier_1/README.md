@@ -133,9 +133,9 @@ Trong bài học này chúng ta sẽ tìm hiểu về:
 **Bộ phận an ninh**
 
 - Giám đốc An ninh Thông tin (CISO) sẽ quản lý nhiều nhóm bảo mật khác nhau:
-+ Red Team: Các chuyên gia bảo mật tấn công, chuyên gia kiểm thử xâm nhập (Pentester) hoặc hacker mũ trắng (Ethical Hacker), có nhiệm vụ tìm kiếm và phát hiện các lỗ hổng, điểm yếu bảo mật trong hệ thống.
-+ GRC Team: Các chuyên gia quản lý chính sách và đảm bảo tuân thủ các quy định như PCI DSS.
-+ Blue Team: Các chuyên gia an ninh phòng thủ như chuyên viên phân tích SOC, kỹ sư hoặc người ứng phó sự cố.
+    + Red Team: Các chuyên gia bảo mật tấn công, chuyên gia kiểm thử xâm nhập (Pentester) hoặc hacker mũ trắng (Ethical Hacker), có nhiệm vụ tìm kiếm và phát hiện các lỗ hổng, điểm yếu bảo mật trong hệ thống.
+    + GRC Team: Các chuyên gia quản lý chính sách và đảm bảo tuân thủ các quy định như PCI DSS.
+    + Blue Team: Các chuyên gia an ninh phòng thủ như chuyên viên phân tích SOC, kỹ sư hoặc người ứng phó sự cố.
 
 **Câu hỏi 1: Vai trò cấp cao nào thường đưa ra các quyết định quan trọng về an ninh mạng?**
 
