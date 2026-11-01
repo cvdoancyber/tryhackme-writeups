@@ -21,12 +21,12 @@ Lộ trình **Pre Security** cung cấp những kiến thức nền tảng về 
 | Section | Module | Số Room |
 |:---:|---|:---:|
 | 01 | [Introduction to Cyber Security](#section-01--introduction-to-cyber-security) | 3 |
-| 02 | [Computer Fundamentals](https://tryhackme.com/module/computer-fundamentals) | 5 |
-| 03 | [Operating Systems Basics](https://tryhackme.com/module/operating-systems-basics) | 5 |
-| 04 | [Software Basics](https://tryhackme.com/module/software-basics) | 5 |
-| 05 | [Network Fundamentals](https://tryhackme.com/module/network-fundamentals) | 5 |
-| 06 | [How The Web Works](https://tryhackme.com/module/how-the-web-works) | 4 |
-| 07 | [Attacks and Defenses](https://tryhackme.com/module/attacks-and-defenses) | 4 |
+| 02 | [Computer Fundamentals](#section-02--computer-fundamentals) | 5 |
+| 03 | [Operating Systems Basics](#section-03--operating-systems-basics) | 5 |
+| 04 | [Software Basics](#section-04--software-basics) | 5 |
+| 05 | [Network Fundamentals](#section-05--network-fundamentals) | 5 |
+| 06 | [How The Web Works](#section-06--how-the-web-works) | 4 |
+| 07 | [Attacks and Defenses](#section-07--attacks-and-defenses) | 4 |
 | **Tổng** | **7 Module** | **31 Room** |
 
 ---
@@ -47,6 +47,7 @@ Giới thiệu tổng quan về an ninh mạng, các khái niệm cơ bản, s�
 - Trung tâm điều hành an ninh mạng (SOC).
 - Các định hướng nghề nghiệp trong lĩnh vực an ninh mạng.
 
+### 
 ---
 
 ## SECTION 02 – COMPUTER FUNDAMENTALS
