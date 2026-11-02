@@ -244,11 +244,13 @@ CIRT
 | Lừa một nhân viên chính phủ tiết lộ thông tin bí mật.             | Sử dụng thông tin thu thập được để tạo điều kiện thuận lợi cho các cuộc tấn công tiếp theo. |
 
 **Câu hỏi 1: Điểm yếu nhất trong an ninh mạng nằm ở đâu, hoặc ai?**
+
 Đáp án:
 ```
 Humans
 ```
 **Câu hỏi 2: Khi nhắm mục tiêu vào con người trong một cuộc tấn công mạng, kẻ tấn công thường hướng đến điều gì?**
+
 Đáp án:
 ```
 Access
@@ -260,6 +262,7 @@ Access
 - Kẻ tấn công thường sử dụng hai yếu tố:
     - Trustworthy: Kẻ tấn công phải tỏ ra đáng tin cậy để nạn nhân tin tưởng.
     - Emotional: Cuộc tấn công phải khơi gợi các cảm xúc như sự khẩn cấp, sự sỡ hãi hoặc tò mò.
+
 **Phishing Attacks**
 
 ![](./images/SECTION_01/03_Humans_as_Attack_Vectors/Task_3/1.svg)
@@ -307,11 +310,13 @@ Impersonation
 ![](./images/SECTION_01/03_Humans_as_Attack_Vectors/Task_4/1.svg)
 
 **Câu hỏi 1: Quá trình nào nhằm mục đích ngăn ngừa hoặc giảm thiểu nguy cơ bị tấn công?**
+
 Đáp án:
 ```
 Mitigation
 ```
 **Câu hỏi 2: Biện pháp giảm thiểu rủi ro nào liên quan đến việc đào tạo nhân viên về an ninh mạng?**
+
 Đáp án:
 ```
 Security awareness training
@@ -324,6 +329,7 @@ Security awareness training
 ![](./images/SECTION_01/03_Humans_as_Attack_Vectors/Task_5/1.png)
 
 **Employees at Risk**
+
 ![](./images/SECTION_01/03_Humans_as_Attack_Vectors/Task_5/2.png)
 
 - Chúng ta có: Tin nhắn mới từ Lucas Martinez
@@ -332,20 +338,25 @@ Security awareness training
 *Sau khi điều tra, bạn phát hiện một tệp có tên Setup.exe được tải xuống từ trang web best-freeapps-2025.top, một trang web mới chuyên cung cấp phần mềm miễn phí. Lucas đã cố gắng chạy tệp này 6 lần, nhưng tất cả đều bị phần mềm diệt virus chặn.*
 
 **- Phương án 1: Cách ly tệp Setup.exe. Hướng dẫn Lucas sử dụng bộ cài đặt 7-Zip từ trang web chính thức.**
+
 - Phương án 2: Thêm tệp Setup.exe vào danh sách ngoại lệ của phần mềm diệt virus. Yêu cầu Lucas thử chạy lại tệp.
 
 ![](./images/SECTION_01/03_Humans_as_Attack_Vectors/Task_5/3.png)
+
 - Chúng ta có cảnh báo từ SIEM:
     - Tiêu đề (Title): Hóa đơn Stripe #38291 – Thanh toán thành công.
     - Người gửi (From): noreply@stripe-payments.xyz.
     - Người nhận (To): Mark Phillips, Giám đốc Tài chính.
     - Nội dung (Content): Email này xác nhận khoản thanh toán 23.650 USD từ TryHackMe theo hóa đơn số #38291. Để xem chi tiết, vui lòng kiểm tra tệp đính kèm Invoice.rar (mật khẩu: 1111). Nếu có bất kỳ câu hỏi nào, vui lòng liên hệ với chúng tôi qua địa chỉ support@stripe.com.
+
 - Phương án 1: Cho phép email đi qua và đóng cảnh báo. Đây là một hóa đơn Stripe hợp lệ.
+
 **- Phương án 2: Chặn email và bắt đầu phân tích. Đây là một nỗ lực tấn công Phishing qua email.**
 
 ![](./images/SECTION_01/03_Humans_as_Attack_Vectors/Task_5/4.png)
 
 - Chúng ta có tin nhắn mới từ Isabella (Bộ phận hỗ trợ IT): 
+
 `Xin chào, tôi vừa nhận được một cuộc gọi điện thoại từ Giám đốc điều hành (CEO) của chúng ta, Ben. Anh ấy yêu cầu tôi đặt lại mật khẩu tài khoản Gmail của mình vì đang gặp một số vấn đề khi đăng nhập. Tất nhiên, tôi đã chấp thuận yêu cầu đó. Nhưng tại sao anh ấy lại gọi điện vào lúc 9 giờ tối và từ một số điện thoại ẩn danh? Điều đó không đáng ngờ sao?`
 
 *Bạn kiểm tra nhật ký hệ thống và phát hiện một phiên đăng nhập từ Hoa Kỳ, cũng là quốc gia nơi Ben đang sinh sống. Tuy nhiên, Ben không trả lời tin nhắn hoặc các cuộc gọi của bạn.*
@@ -365,7 +376,9 @@ Security awareness training
         -   http://login[.]micrsoft365-online[.]ru
 	    -   https://hroyhiqtspsqgkp[.]info
 	    -   https://mail[.]tryhackme[.]thm
+
 - Phương án 1: Đóng cảnh báo. London không cách Oxford quá xa, vì vậy vị trí đăng nhập này có thể được coi là bình thường.
+
 **- Phương án 2: Tạm thời vô hiệu hóa tài khoản của Rose Lewis cho đến khi có đủ thông tin để đưa ra kết luận chắc chắn hơn.**
 
 **Security Policy**
@@ -373,6 +386,7 @@ Security awareness training
 ![](./images/SECTION_01/03_Humans_as_Attack_Vectors/Task_5/6.png)
 
 ![](./images/SECTION_01/03_Humans_as_Attack_Vectors/Task_5/7.png)
+
 | STT | Chính sách                                                                | Mô tả                                                                                                                           |
 | --- | ------------------------------------------------------------------------- | ------------------------------------------------------------------------------------------------------------------------------- |
 | 1   | Antivirus Solution (Giải pháp chống mã độc)                               | Mua và cài đặt phần mềm diệt virus đáng tin cậy trên tất cả máy trạm của nhân viên trong tổ chức.                               |
