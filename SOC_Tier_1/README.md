@@ -198,6 +198,26 @@ defensive
 CIRT
 ```
 
+#### Task 5 - Final Challenge
+
+- Trong Task này, chúng ta sẽ đóng vai trò là một CISO, có bảy sự cố an ninh mạng xảy ra cùng lúc, chúng ta cần lựa chọn đúng người để xử lý sự cố.
+
+![](./images/SECTION_01/02_SOC_Role_in_Blue_Team/Task_5/1.png)
+
+
+| STT | Tình huống sự cố             | Mô tả                                                                                                                                                                      |
+| --- | ---------------------------- | ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| 1   | Firewall Brute-force Alert   | Hệ thống SIEM đã tạo cảnh báo về một cuộc tấn công dò mật khẩu (Brute-force) nhắm vào tường lửa `FW-NY-01`. Ai sẽ chịu trách nhiệm tiếp nhận, phân loại và đánh giá ban đầu cảnh báo này? |
+| 2   | Phishing Malware Analysis    | Anna, trưởng phòng nhân sự, đã vô tình thực thi một mã độc thông qua cuộc tấn công phishing. Ai sẽ chịu trách nhiệm phân tích chuyên sâu mã độc này?                                      |
+| 3   | Ransomware Incident          | Văn phòng của công ty tại Pháp đã bị tấn công bằng mã độc tống tiền (Ransomware). Sự cố yêu cầu phải ứng cứu ngay lập tức!                                                                |
+| 4   | PCI DSS Audit                | Các máy chủ lưu trữ thông tin thẻ tín dụng của công ty cần được kiểm toán tuân thủ tiêu chuẩn PCI DSS. Ai có thể hỗ trợ thực hiện công việc này?                                          |
+| 5   | Vulnerability Assessment     | Ai có thể kiểm tra phiên bản mới của trang web `tryhackme.thm` để phát hiện các lỗ hổng bảo mật?                                                                                          |
+| 6   | SIEM Storage Issue           | Hệ thống SIEM không thể hoạt động do đã đạt giới hạn dung lượng lưu trữ. Ai có thể điều tra và khắc phục sự cố này?                                                                       |
+| 7   | Threat Intelligence Analysis | Nhóm tin tặc FIN7 đang tích cực nhắm mục tiêu tấn công công ty chúng ta. Ai có thể phân tích các chiến thuật và kỹ thuật tấn công của nhóm này?                                           |
+
+![](./images/SECTION_01/02_SOC_Role_in_Blue_Team/Task_5/2.png)
+
+ >SOC L1 tiếp nhận và phân loại cảnh báo; SOC L2 điều tra chuyên sâu; SOC Engineer duy trì công cụ giám sát; CERT phụ trách ứng cứu sự cố; GRC đảm nhiệm kiểm toán và tuân thủ; Pentester kiểm thử bảo mật; Threat Researcher nghiên cứu các nhóm và kỹ thuật tấn công.
 ---
 
 ## SECTION 02 – SOC TEAM INTERNALS
