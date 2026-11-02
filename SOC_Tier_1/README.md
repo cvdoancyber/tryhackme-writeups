@@ -222,7 +222,175 @@ CIRT
 
 ## 03. Humans as Attack Vectors
 
-## SECTION 02 – SOC TEAM INTERNALS
+### Task 1 - Introduction
+
+- Điểm yếu nhất - con người!!!
+- Chúng ta sẽ tìm hiểu về:
+    - Vai trò của con người trong an ninh mạng.
+    - Vai trò của SOC trong việc phát hiện và giảm thiểu các cuộc tấn công.
+    - Các tình huống thực tế.
+
+### Task 2 - The Human Element
+
+- Trong một tổ chức, con người có thể cung cấp quyền truy cập vào các trang web, email, cơ sở dữ liệu ....
+
+- Ví dụ về các cuộc tấn công và hành động tiếp theo của kẻ tấn công
+
+| Ví dụ về cuộc tấn công                            | Hành động tiếp theo của kẻ tấn công                                |
+| ----------------------------------------------------------------- | ------------------------------------------------------------------------------------------- |
+| Xâm nhập trái phép vào tài khoản Google của trưởng phòng nhân sự. | Đánh cắp và bán toàn bộ cơ sở dữ liệu nhân viên.                                            |
+| Lừa một người giàu có thực thi mã độc (Malware).                  | Chiếm quyền điều khiển phiên giao dịch ngân hàng trực tuyến trên máy tính của nạn nhân.     |
+| Xâm nhập trái phép vào tài khoản VPN của quản trị viên CNTT.      | Truy cập vào hệ thống mạng nội bộ cốt lõi của một tập đoàn lớn.                             |
+| Lừa một nhân viên chính phủ tiết lộ thông tin bí mật.             | Sử dụng thông tin thu thập được để tạo điều kiện thuận lợi cho các cuộc tấn công tiếp theo. |
+
+**Câu hỏi 1: Điểm yếu nhất trong an ninh mạng nằm ở đâu, hoặc ai?**
+Đáp án:
+```
+Humans
+```
+**Câu hỏi 2: Khi nhắm mục tiêu vào con người trong một cuộc tấn công mạng, kẻ tấn công thường hướng đến điều gì?**
+Đáp án:
+```
+Access
+```
+
+### Task 3 - Attacks on Humans
+
+- Các cuộc tấn công nhắm vào con người hay còn được gọi là **Social Engineering** dựa vào việc thao túng nạn nhân để khiến họ vô tình hoặc cố ý hỗ trợ cho kẻ tấn công. 
+- Kẻ tấn công thường sử dụng hai yếu tố:
+    - Trustworthy: Kẻ tấn công phải tỏ ra đáng tin cậy để nạn nhân tin tưởng.
+    - Emotional: Cuộc tấn công phải khơi gợi các cảm xúc như sự khẩn cấp, sự sỡ hãi hoặc tò mò.
+**Phishing Attacks**
+
+![](./images/SECTION_01/03_Humans_as_Attack_Vectors/Task_3/1.svg)
+
+- Bạn nhận được một email với nội dung: "Tài khoản của bạn đã bị xâm phạm. Nhấp vào đây để biết thêm chi tiết!" Khi bạn nhấp vào liên kết, nó sẽ đưa bạn đến một trang đăng nhập giả mạo trông rất thật, nhưng lại gửi thông tin đăng nhập của bạn cho kẻ tấn công. Đó chính là hành vi lừa đảo qua email (phishing). Lừa đảo qua email là hình thức tấn công kỹ thuật xã hội phổ biến nhất, với ước tính khoảng 3,4 tỷ email độc hại được gửi mỗi ngày.
+
+**Malware Downloads**
+
+![](./images/SECTION_01/03_Humans_as_Attack_Vectors/Task_3/2.svg)
+
+- Trên các trang web xuất hiện các nút Download giả, khi bấm vào chúng ta sẽ vô tình tải về phần mềm độc hại. Một số tin tặc còn sử dụng các kỹ thuật CAPTCHA giả mạo hoặc QR độc hại.
+
+**Deepfakes**
+
+- AI có thể tạo ra các video, hình ảnh, âm thanh giả mạo các thành viên trong gia đình,đồng nghiệp, các đối tác kinh doanh và tiếng hành lừa đảo.
+
+**Câu hỏi 1: Tên gọi của một chiến thuật tấn công thao túng tâm lý con người là gì?**
+
+Đáp án:
+
+```
+Social Engineering
+```
+
+**Câu hỏi 2: Phương pháp tấn công phi kỹ thuật nào liên quan đến việc giả danh người khác?**
+
+Đáp án:
+```
+Impersonation
+```
+
+### Task 4 - Defending Humans
+
+- Phòng chống các mối đe dọa gồm hai nhiệm vụ chính:
+    - Giảm thiểu (Mitigation): Ngăn chặn hoặc giảm thiểu khả năng tác động của các cuộc tấn công. 
+    - Detection.
+
+| Biện pháp                                        | Mô tả                                                                                                                                                                            |
+| ------------------------------------------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ |
+| Giải pháp chống Phishing (Anti-phishing Solution)             | Giúp giảm tải công việc cho SOC bằng cách sử dụng các công cụ tự động phát hiện và chặn email lừa đảo trước khi chúng đến được người dùng.                                                       |
+| Giải pháp Antivirus / EDR                                     | Triển khai phần mềm diệt virus hoặc giải pháp phát hiện và phản ứng tại thiết bị đầu cuối (EDR) đáng tin cậy trên tất cả máy tính trong doanh nghiệp, nhằm ngăn chặn người dùng thực thi mã độc. |
+| Nguyên tắc "Tin tưởng nhưng phải xác minh" (Trust but Verify) | Hướng dẫn nhân viên cách nhận diện nội dung giả mạo bằng AI (Deepfake) và xác minh các yêu cầu đáng ngờ từ những người tự xưng là "Giám đốc điều hành (CEO)" hoặc "Bộ phận CNTT (IT)".           |
+| Đào tạo nhận thức an ninh mạng (Security Awareness Training)  | Đào tạo nhân viên cách nhận diện các cuộc tấn công Phishing và củng cố kiến thức thông qua các bài diễn tập mô phỏng tấn công Phishing.                                                          |
+
+![](./images/SECTION_01/03_Humans_as_Attack_Vectors/Task_4/1.svg)
+
+**Câu hỏi 1: Quá trình nào nhằm mục đích ngăn ngừa hoặc giảm thiểu nguy cơ bị tấn công?**
+Đáp án:
+```
+Mitigation
+```
+**Câu hỏi 2: Biện pháp giảm thiểu rủi ro nào liên quan đến việc đào tạo nhân viên về an ninh mạng?**
+Đáp án:
+```
+Security awareness training
+```
+
+### Task 5 - Practice
+
+- Trong lab này chúng ta cần bảo vệ đồng nghiệp tại `Employees at Risk` và tăng cường bảo mật tại `Security Policy`.
+
+![](./images/SECTION_01/03_Humans_as_Attack_Vectors/Task_5/1.png)
+
+**Employees at Risk**
+![](./images/SECTION_01/03_Humans_as_Attack_Vectors/Task_5/2.png)
+
+- Chúng ta có: Tin nhắn mới từ Lucas Martinez
+`Xin chào, tôi là một kỹ sư phần mềm mới. Tôi đang rất cần phần mềm nén và giải nén 7-Zip, nhưng phần mềm không thể khởi chạy. Bạn có thể kiểm tra xem có phải do các công cụ bảo mật của chúng ta đang chặn nó không?`
+
+*Sau khi điều tra, bạn phát hiện một tệp có tên Setup.exe được tải xuống từ trang web best-freeapps-2025.top, một trang web mới chuyên cung cấp phần mềm miễn phí. Lucas đã cố gắng chạy tệp này 6 lần, nhưng tất cả đều bị phần mềm diệt virus chặn.*
+
+**- Phương án 1: Cách ly tệp Setup.exe. Hướng dẫn Lucas sử dụng bộ cài đặt 7-Zip từ trang web chính thức.**
+- Phương án 2: Thêm tệp Setup.exe vào danh sách ngoại lệ của phần mềm diệt virus. Yêu cầu Lucas thử chạy lại tệp.
+
+![](./images/SECTION_01/03_Humans_as_Attack_Vectors/Task_5/3.png)
+- Chúng ta có cảnh báo từ SIEM:
+    - Tiêu đề (Title): Hóa đơn Stripe #38291 – Thanh toán thành công.
+    - Người gửi (From): noreply@stripe-payments.xyz.
+    - Người nhận (To): Mark Phillips, Giám đốc Tài chính.
+    - Nội dung (Content): Email này xác nhận khoản thanh toán 23.650 USD từ TryHackMe theo hóa đơn số #38291. Để xem chi tiết, vui lòng kiểm tra tệp đính kèm Invoice.rar (mật khẩu: 1111). Nếu có bất kỳ câu hỏi nào, vui lòng liên hệ với chúng tôi qua địa chỉ support@stripe.com.
+- Phương án 1: Cho phép email đi qua và đóng cảnh báo. Đây là một hóa đơn Stripe hợp lệ.
+**- Phương án 2: Chặn email và bắt đầu phân tích. Đây là một nỗ lực tấn công Phishing qua email.**
+
+![](./images/SECTION_01/03_Humans_as_Attack_Vectors/Task_5/4.png)
+
+- Chúng ta có tin nhắn mới từ Isabella (Bộ phận hỗ trợ IT): 
+`Xin chào, tôi vừa nhận được một cuộc gọi điện thoại từ Giám đốc điều hành (CEO) của chúng ta, Ben. Anh ấy yêu cầu tôi đặt lại mật khẩu tài khoản Gmail của mình vì đang gặp một số vấn đề khi đăng nhập. Tất nhiên, tôi đã chấp thuận yêu cầu đó. Nhưng tại sao anh ấy lại gọi điện vào lúc 9 giờ tối và từ một số điện thoại ẩn danh? Điều đó không đáng ngờ sao?`
+
+*Bạn kiểm tra nhật ký hệ thống và phát hiện một phiên đăng nhập từ Hoa Kỳ, cũng là quốc gia nơi Ben đang sinh sống. Tuy nhiên, Ben không trả lời tin nhắn hoặc các cuộc gọi của bạn.*
+
+**- Phương án 1: Tạm thời vô hiệu hóa tài khoản Gmail của Ben cho đến khi anh ấy xác nhận phiên đăng nhập hoặc quay trở lại văn phòng.**
+
+- Phương án 2: Chờ đến ngày làm việc tiếp theo và trực tiếp hỏi Ben về các chi tiết của sự việc tại văn phòng.
+
+![](./images/SECTION_01/03_Humans_as_Attack_Vectors/Task_5/5.png)
+
+- Cảnh báo SIEM mới: Vị trí đăng nhập bất thường (Anomalous Login Location)
+    -   Người dùng (User): Rose Lewis, Trợ lý phòng Nhân sự (HR Assistant)
+    - Dịch vụ đăng nhập (Login To): Microsoft 365
+    - Vị trí đăng nhập (Login Location): London, Vương quốc Anh
+    - Vị trí đăng nhập thông thường (Typical Location): Oxford, Vương quốc Anh
+    - Các URL đã truy cập trước khi đăng nhập (Visited URLs Before Login):
+        -   http://login[.]micrsoft365-online[.]ru
+	    -   https://hroyhiqtspsqgkp[.]info
+	    -   https://mail[.]tryhackme[.]thm
+- Phương án 1: Đóng cảnh báo. London không cách Oxford quá xa, vì vậy vị trí đăng nhập này có thể được coi là bình thường.
+**- Phương án 2: Tạm thời vô hiệu hóa tài khoản của Rose Lewis cho đến khi có đủ thông tin để đưa ra kết luận chắc chắn hơn.**
+
+**Security Policy**
+
+![](./images/SECTION_01/03_Humans_as_Attack_Vectors/Task_5/6.png)
+
+![](./images/SECTION_01/03_Humans_as_Attack_Vectors/Task_5/7.png)
+| STT | Chính sách                                                                | Mô tả                                                                                                                           |
+| --- | ------------------------------------------------------------------------- | ------------------------------------------------------------------------------------------------------------------------------- |
+| 1   | Antivirus Solution (Giải pháp chống mã độc)                               | Mua và cài đặt phần mềm diệt virus đáng tin cậy trên tất cả máy trạm của nhân viên trong tổ chức.                               |
+| 2   | Manual Login Approval (Phê duyệt đăng nhập thủ công)                      | Yêu cầu các chuyên viên SOC phải phê duyệt thủ công mọi lần đăng nhập vào email doanh nghiệp.                                   |
+| 3   | Daily Vulnerability Scanning (Quét lỗ hổng bảo mật hằng ngày)             | Thực hiện quét lỗ hổng bảo mật hằng ngày trên tất cả máy chủ và máy trạm của doanh nghiệp.                                      |
+| 4   | Anti-Phishing Solution (Giải pháp chống lừa đảo qua email)                | Mua và triển khai giải pháp có khả năng tự động phát hiện, ngăn chặn phần lớn email phishing.                                   |
+| 5   | Security Awareness Program (Chương trình nâng cao nhận thức an ninh mạng) | Tổ chức đào tạo định kỳ 3 tháng một lần cho tất cả nhân viên về cách phát hiện và báo cáo các kỹ thuật phishing hiện đại.       |
+| 6   | Access Management Policy (Chính sách quản lý truy cập)                    | Xây dựng quy trình hướng dẫn bộ phận hỗ trợ IT xác minh các yêu cầu như đặt lại mật khẩu hoặc phê duyệt quyền truy cập.         |
+| 7   | Internet Restrictions (Hạn chế truy cập Internet)                         | Giới hạn quyền truy cập Internet của tất cả nhân viên, chỉ cho phép truy cập các tài nguyên phục vụ công việc của doanh nghiệp. |
+
+![](./images/SECTION_01/03_Humans_as_Attack_Vectors/Task_5/8.png)
+
+1. Antivirus Solution: Bảo vệ máy trạm khỏi các phần mềm độc hại được tải xuống từ Internet, như trường hợp Lucas thực thi Setup.exe.
+2. Anti-Phishing Solution: Phát hiện và ngăn chặn email lừa đảo, chẳng hạn email giả mạo Stripe có chứa tệp Invoice.rar.
+3. Access Management Policy: Yêu cầu xác minh danh tính trước khi đặt lại mật khẩu hoặc cấp quyền truy cập, giúp ngăn chặn tình huống giả mạo CEO để chiếm đoạt tài khoản.
+4. Security Awareness Program: Giúp nhân viên nhận diện email giả mạo, liên kết độc hại và những kỹ thuật Social Engineering.
+
+# SECTION 02 – SOC TEAM INTERNALS
 
 ### Giới thiệu
 
