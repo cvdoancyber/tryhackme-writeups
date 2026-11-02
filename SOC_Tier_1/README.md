@@ -8,7 +8,7 @@ SOC Analyst Tier 1 là tuyến phòng thủ đầu tiên, chịu trách nhiệm 
 
 Lộ trình bao gồm quy trình vận hành SOC, sử dụng các công cụ giám sát, phân tích lưu lượng mạng, phát hiện tấn công và xử lý sự cố.
 
-### MỤC TIÊU HỌC TẬP
+## MỤC TIÊU HỌC TẬP
 
 - Hiểu cấu trúc, vai trò và quy trình vận hành của SOC.
 - Nắm vững quy trình tiếp nhận, phân loại, phân tích và xử lý cảnh báo bảo mật.
@@ -151,7 +151,53 @@ CISO
 Blue Team
 ```
 
-#### 
+#### Task 3 - Meet the Blue Team
+
+- Blue Team tập trung vào bảo mật phòng thủ. Liên tục giám sát các cuộc tấn công và phản ứng nhanh chóng khi có sự cố an ninh mạng.
+
+**Security Operations Center (SOC)**
+
+![](./images/SECTION_01/02_SOC_Role_in_Blue_Team/Task_3/1.svg)
+
+- Những người làm việc trong SOC là tuyến phòng thủ đầu tiên, xử lý các cảnh báo, giải quyết hầu hết các cuộc tấn công.
+
+- Một SOC thông thường bao gồm:
+    - L1 Analysts: Hay còn gọi là SOC Tier 1 có trách nhiệm phân loại cảnh báo và chuyển các trường hợp phức tạp cho SOC Tier 2.
+    - L2 Analysts: Hay còn gọi là SOC Tier 2 thực hiện điều tra các trường hợp phức tạp do SOC Tier 1 đưa lên.
+    - Engineers: Là những người thực hiện cấu hình các công cụ bảo mật như EDR hoặc SIEM.
+    - Manager: Người quản lý toàn bộ SOC.
+
+**Cyber Incident Response Team (CIRT)**
+>Đội ứng phó sự cố an ninh mạng
+
+![](./images/SECTION_01/02_SOC_Role_in_Blue_Team/Task_3/2.svg)
+
+- Nếu như SOC không thể giải quyết được các sự cố an ninh mạng, chúng ta sẽ cần đến CIRT.
+
+**Specialized Defensive Roles**
+> Các vai trò phòng thủ chuyên biệt
+
+![](./images/SECTION_01/02_SOC_Role_in_Blue_Team/Task_3/3.svg)
+
+- Digital Forensics Analyst: Điều tra các mối đe dọa tiềm ẩn.
+- Digital Forensics Analyst: Thu thập các thông tin về các mối đe dọa.
+- AppSec Engineer: Duy trì phần mềm an toàn.
+- AI Researcher: Nghiên cứu các mối đe dọa từ AI và cách phòng chống chúng.
+
+**Câu hỏi 1: Blue Team tập trung vào defensive hay offensive?**
+
+Đáp án:
+```
+defensive
+```
+
+**Câu hỏi 2: Bộ phận nào xử lý các sự cố an ninh mạng đang diễn ra hoặc khẩn cấp?**
+
+Đáp án:
+```
+CIRT
+```
+
 ---
 
 ## SECTION 02 – SOC TEAM INTERNALS
