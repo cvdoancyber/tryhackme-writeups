@@ -1,6 +1,6 @@
 # SOC Tier 1
 
-##  GIỚI THIỆU
+**GIỚI THIỆU**
 
 Security Operations Center (SOC) là trung tâm giám sát và điều hành an ninh mạng, đóng vai trò quan trọng trong việc bảo vệ hệ thống thông tin của các tổ chức.
 
@@ -8,7 +8,7 @@ SOC Analyst Tier 1 là tuyến phòng thủ đầu tiên, chịu trách nhiệm 
 
 Lộ trình bao gồm quy trình vận hành SOC, sử dụng các công cụ giám sát, phân tích lưu lượng mạng, phát hiện tấn công và xử lý sự cố.
 
-## MỤC TIÊU HỌC TẬP
+**MỤC TIÊU HỌC TẬP**
 
 - Hiểu cấu trúc, vai trò và quy trình vận hành của SOC.
 - Nắm vững quy trình tiếp nhận, phân loại, phân tích và xử lý cảnh báo bảo mật.
@@ -23,7 +23,7 @@ Lộ trình bao gồm quy trình vận hành SOC, sử dụng các công cụ gi
 
 ---
 
-## TỔNG QUAN LỘ TRÌNH
+**TỔNG QUAN LỘ TRÌNH**
 
 | Section | Module | Số Room |
 |:---:|---|:---:|
@@ -45,20 +45,20 @@ Lộ trình bao gồm quy trình vận hành SOC, sử dụng các công cụ gi
 
 ---
 
-## SECTION 01 – BLUE TEAM INTRODUCTION
+# SECTION 01 – BLUE TEAM INTRODUCTION
 
-### Giới thiệu
+**Giới thiệu**
 
 Giới thiệu những kiến thức cơ bản về Blue Team, vai trò của SOC Analyst và các phương thức mà kẻ tấn công có thể khai thác con người hoặc hệ thống để xâm nhập vào tổ chức.
 
-### Danh sách bài học
+**Danh sách bài học**
 
 - [ ] 01. [Junior Security Analyst Intro](#01-junior-security-analyst-intro)
 - [ ] 02. [SOC Role in Blue Team](#02-soc-role-in-blue-team)
-- [ ] 03. Humans as Attack Vectors
+- [ ] 03. [Humans as Attack Vectors](#03-humans-as-attack-vectors)
 - [ ] 04. Systems as Attack Vectors
 
-### Kiến thức trọng tâm
+**Kiến thức trọng tâm**
 
 - Khái niệm và nhiệm vụ của Blue Team.
 - Vai trò và trách nhiệm của SOC Analyst.
@@ -67,9 +67,9 @@ Giới thiệu những kiến thức cơ bản về Blue Team, vai trò của SO
 - Các phương thức tấn công vào hệ thống thông tin.
 - Vai trò của giám sát và phát hiện sớm các mối đe dọa.
 
-### 01. Junior Security Analyst Intro
+## 01. Junior Security Analyst Intro
 
-#### Task 1 - Junior Security Analyst Journey
+### Task 1 - Junior Security Analyst Journey
 
 Một chuyên viên SOC Tier 1 sẽ làm việc trong một nhóm SOC 24/7:
 - Theo dõi và kiểm tra các cảnh báo an ninh mạng.
@@ -77,7 +77,7 @@ Một chuyên viên SOC Tier 1 sẽ làm việc trong một nhóm SOC 24/7:
 - Hợp tác với các nhóm bảo mật khác trong công ty.
 - Liên tục cập nhật và phân tích các phương pháp tấn công và phòng thủ mới.
 
-#### Task 3 - A Day in the Life of a Security Analyst
+### Task 3 - A Day in the Life of a Security Analyst
 
 - Ta có một dashboard như sau:
 
@@ -110,16 +110,16 @@ Chúng ta tiến hành block IP độc hại
 
 ![](./images/SECTION_01/01_Junior_Security_Analyst_Intro/Task_3/4.png)
 
-### 02. SOC Role in Blue Team
+## 02. SOC Role in Blue Team
 
-#### Task 1 - Introduction
+### Task 1 - Introduction
 
 Trong bài học này chúng ta sẽ tìm hiểu về:
 - Khái niệm và mục đích của Blue Team.
 - Vị trí của SOC trong cấu trúc công ty.
 - Lộ trình của chuyên viên SOC Tier 1.
 
-#### Task 2 - Security Hierarchy
+### Task 2 - Security Hierarchy
 
 **Hệ thống phân cấp bảo mật**
 
@@ -151,7 +151,7 @@ CISO
 Blue Team
 ```
 
-#### Task 3 - Meet the Blue Team
+### Task 3 - Meet the Blue Team
 
 - Blue Team tập trung vào bảo mật phòng thủ. Liên tục giám sát các cuộc tấn công và phản ứng nhanh chóng khi có sự cố an ninh mạng.
 
@@ -198,7 +198,7 @@ defensive
 CIRT
 ```
 
-#### Task 5 - Final Challenge
+### Task 5 - Final Challenge
 
 - Trong Task này, chúng ta sẽ đóng vai trò là một CISO, có bảy sự cố an ninh mạng xảy ra cùng lúc, chúng ta cần lựa chọn đúng người để xử lý sự cố.
 
@@ -219,6 +219,8 @@ CIRT
 
  >SOC L1 tiếp nhận và phân loại cảnh báo; SOC L2 điều tra chuyên sâu; SOC Engineer duy trì công cụ giám sát; CERT phụ trách ứng cứu sự cố; GRC đảm nhiệm kiểm toán và tuân thủ; Pentester kiểm thử bảo mật; Threat Researcher nghiên cứu các nhóm và kỹ thuật tấn công.
 ---
+
+## 03. Humans as Attack Vectors
 
 ## SECTION 02 – SOC TEAM INTERNALS
 
