@@ -469,6 +469,38 @@ Vulnerability
 Supply Chain
 ```
 
+### Task 4 Vulnerabilities
+
+**Software Vulnerabilities**
+
+- Mọi phần mềm đều có lỗi, và có những lỗi mà kẻ xấu phát hiện ra trước và tiến hành khai thác nó, đó gọi là lỗ hổng *zero-day*.
+- Khi một lỗ hổng được công khai, nó sẽ được gán một mã số Common Vulnerabilities and Exposures (CVE).
+
+![](./images/SECTION_01/04_Systems_as_Attack_Vectors/Task_4/1.svg)
+
+**Responding to Vulnerabilities**
+
+- Giải pháp là bản vá lỗi - là bản cập nhật của nhà cung cấp phần mềm cung cấp.
+- Trong khi chờ đợi bản vá chúng ta có thể:
+    - Hạn chế quyền truy cập, chỉ cấp quyền truy cập cho các địa chỉ IP đáng tin cậy.
+    - Áp dụng các biện pháp tạm thời do nhà cung cấp cung cấp.
+    - Chặn các kiểu tấn công đã biết trên IPS hoặc WAF.
+
+**Câu hỏi 1: Mã CVE cho lỗ hổng bảo mật nghiêm trọng "ToolShell" của SharePoint là gì?**
+
+Đáp án: 
+
+```
+CVE-2025-53770
+```
+
+**Câu hỏi 2: Bạn sẽ phản ứng như thế nào khi phát hiện ra lỗ hổng bảo mật trên hệ thống của mình?**
+
+Đáp án: Bản vá
+
+```
+patch
+```
 
 # SECTION 02 – SOC TEAM INTERNALS
 
