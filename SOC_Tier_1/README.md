@@ -56,7 +56,7 @@ Giới thiệu những kiến thức cơ bản về Blue Team, vai trò của SO
 - [ ] 01. [Junior Security Analyst Intro](#01-junior-security-analyst-intro)
 - [ ] 02. [SOC Role in Blue Team](#02-soc-role-in-blue-team)
 - [ ] 03. [Humans as Attack Vectors](#03-humans-as-attack-vectors)
-- [ ] 04. Systems as Attack Vectors
+- [ ] 04. [Systems as Attack Vectors](#04-systems-as-attack-vectors)
 
 **Kiến thức trọng tâm**
 
@@ -403,6 +403,72 @@ Security awareness training
 2. Anti-Phishing Solution: Phát hiện và ngăn chặn email lừa đảo, chẳng hạn email giả mạo Stripe có chứa tệp Invoice.rar.
 3. Access Management Policy: Yêu cầu xác minh danh tính trước khi đặt lại mật khẩu hoặc cấp quyền truy cập, giúp ngăn chặn tình huống giả mạo CEO để chiếm đoạt tài khoản.
 4. Security Awareness Program: Giúp nhân viên nhận diện email giả mạo, liên kết độc hại và những kỹ thuật Social Engineering.
+
+
+
+## 04. Systems as Attack Vectors
+
+### Task 1 Introduction
+
+- Trong phần này chúng ta sẽ tìm hiểu về:
+    - Vai trò của hệ thống.
+    - Các cuộc tấn công thực tế nhắm vào hệ thống.
+
+### Task 2 Definition of System
+
+- Một hệ thống có thể là một máy chủ vật lý, một máy tính trong phòng thí nghiệm hoặc một nền tảng đám mây. 
+- Chúng ta cần bảo vệ các hệ thống này vì khi kẻ tấn công có thể xâm nhập vào một hệ thống, chúng có thể khai thác được rất nhiều thông tin trong hệ thống và những thứ liên quan.
+- Mỗi loại hệ thống chứa đựng các giá trị khác nhau: 
+
+Mỗi loại hệ thống có thể mang lại những giá trị khác nhau đối với kẻ tấn công, chẳng hạn như:
+
+| Hệ thống bị xâm nhập (Breached System)                              | Giá trị đối với kẻ tấn công (Attack Value)                                                                                                                |
+| ------------------------------------------------------------------- | --------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| Máy tính xách tay cá nhân của một học sinh.                         | Đánh cắp tài khoản Steam và biến máy tính thành một phần của mạng máy tính ma (Botnet).                                                                   |
+| Máy tính xách tay của quản trị viên CNTT cấp cao tại một ngân hàng. | Chiếm quyền truy cập vào các hệ thống ngân hàng nội bộ.                                                                                                   |
+| Máy chủ email của một công ty luật hình sự.                         | Trích xuất toàn bộ dữ liệu từ các hộp thư và sử dụng thông tin thu thập được để tống tiền nạn nhân.                                                       |
+| Một máy chủ nằm ở vị trí trung tâm của mạng công nghiệp.            | Sử dụng mã độc tống tiền (Ransomware) để mã hóa toàn bộ hệ thống mạng.                                                                                    |
+| Bảng điều khiển quản trị website của một cơ quan chính phủ.         | Phá hoại hoặc thay đổi trái phép nội dung website (Website Defacement), có thể nhằm mục đích thể hiện quan điểm hoặc hoạt động của một nhóm (Hacktivism). |
+
+### Task 3 Attacks on Systems
+
+- Mục tiêu của hacker là giành quyền truy cập vào hệ thống nhằm đánh cắp dữ liệu, phát tán phần mềm tống tiền, phá hủy dữ liệu mà không thể khôi phục...
+
+**Human-Led Attacks**
+
+- Con người là điểm yếu nhất, chúng ta có thể gián tiếp hoặc trực tiếp khởi xướng cho các cuộc tấn công.
+- Ví dụ như cắm 1 USB có chứa mã độc, tải các phần mềm độc hại từ các nguồn không đáng tin cậy, sử dụng mật khẩu yếu cho các tài khoản...
+
+![](./images/SECTION_01/04_Systems_as_Attack_Vectors/Task_3/1.svg)
+
+**Vulnerabilities**
+
+- Lỗ hổng là các lỗi hoặc điểm yếu của hệ thống mà kẻ xấu có thể khai thác chúng.
+- Những lỗ hổng này có thể đến từ các nguồn khác nhau, vì vậy việc tìm kiếm và khắc phục chúng là vô cùng quan trọng.
+
+![](./images/SECTION_01/04_Systems_as_Attack_Vectors/Task_3/2.svg)
+
+**Supply Chain**
+
+- Supply Chain là các hệ thống liên kết, phân mềm phụ thuộc lẫn nhau mà kẻ tấn công có thể khai thác. 
+- Mỗi ứng dụng trên máy tính của bạn đều dựa vào nhiều thư viện và thành phần, tạo nên một mạng lưới phụ thuộc phức tạp. Nếu kẻ tấn công xâm nhập thành công bất kỳ ứng dụng hoặc thư viện nào trong số này, chúng có thể phát tán các bản cập nhật độc hại cho tất cả người dùng, làm tổn hại đến một loạt hệ thống. Đây gọi là *supply chain attack*.
+
+**Câu hỏi 1: Thuật ngữ nào dùng để chỉ một lỗ hổng bảo mật có thể bị khai thác để xâm nhập hệ thống?**
+
+Đáp án: 
+
+```
+Vulnerability
+```
+
+**Câu hỏi 2: Cuộc tấn công này được gọi là gì khi phần mềm độc hại đến từ một ứng dụng hoặc thư viện đáng tin cậy?**
+
+Đáp án: 
+
+```
+Supply Chain
+```
+
 
 # SECTION 02 – SOC TEAM INTERNALS
 
