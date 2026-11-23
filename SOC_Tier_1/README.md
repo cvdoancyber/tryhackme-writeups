@@ -556,6 +556,130 @@ patch
 Penetration Testing
 ```
 
+### Task 6 Practice
+
+- Cần kết hợp Mitigation và Detection để bảo vệ hệ thống.
+
+![](./images/SECTION_01/04_Systems_as_Attack_Vectors/Task_6/1.svg)
+
+-  Các biện pháp phổ biến để bảo vệ hệ thống:
+
+| Biện pháp (Mitigation)                                       | Mô tả (Description)                                                                                                                                                              |
+| ------------------------------------------------------------ | -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| **Patch Management** (Quản lý bản vá)                        | Quy trình theo dõi, phát hiện và triển khai các bản vá cho những hệ thống có lỗ hổng bảo mật, giúp giảm đáng kể khả năng xảy ra một cuộc tấn công thành công.                    |
+| **Training for IT** (Đào tạo nhân viên CNTT)                 | Khi nhân viên CNTT hiểu rõ những rủi ro do cấu hình sai gây ra, họ sẽ ít có khả năng để hệ thống thiếu các biện pháp bảo vệ cần thiết.                                           |
+| **Network Protection** (Bảo vệ mạng)                         | Hệ thống sẽ khó bị xâm nhập hơn nhiều nếu quyền truy cập chỉ được cấp cho những người dùng đáng tin cậy hoặc các địa chỉ IP được phép.                                           |
+| **Antivirus Protection** (Bảo vệ bằng phần mềm chống mã độc) | Tương tự như việc bảo vệ người dùng trước các cuộc tấn công mạng, một phần mềm chống mã độc hiệu quả có thể ngăn chặn hoặc ít nhất phát hiện nhiều hình thức tấn công khác nhau. |
+
+- Bắt đầu:
+
+![](./images/SECTION_01/04_Systems_as_Attack_Vectors/Task_6/2.png)
+
+![](./images/SECTION_01/04_Systems_as_Attack_Vectors/Task_6/3.png)
+
+**Cảnh báo: HQ-MAIL-02 có nguy cơ bị tấn công – Cần hành động ngay!**
+
+**Nội dung cảnh báo:**
+
+Đội kiểm thử xâm nhập (Penetration Testing Team) báo cáo rằng máy chủ thư điện tử Exchange của chúng ta bị ảnh hưởng bởi lỗ hổng **CVE-2024-49040**.
+
+Họ đã khai thác thành công lỗ hổng này để xâm nhập vào máy chủ và cho biết bất kỳ ai cũng có thể thực hiện cuộc tấn công tương tự, vì máy chủ của chúng ta được kết nối và cho phép truy cập trực tiếp từ Internet (*Internet-exposed*).
+
+**Câu hỏi: Cần thực hiện hành động nào?**
+
+1\. Yêu cầu bộ phận CNTT thay đổi ngay lập tức mật khẩu của tất cả người dùng email.
+
+2\. Yêu cầu bộ phận CNTT triển khai bản vá bảo mật và cập nhật máy chủ Exchange.
+
+3\. Giới hạn quyền truy cập vào máy chủ HQ-MAIL-02, chỉ cho phép các địa chỉ IP thuộc mạng văn phòng.
+
+**Đáp án 2**
+
+**Giải thích:** Máy chủ đang tồn tại một lỗ hổng bảo mật đã được xác định (CVE-2024-49040). Việc triển khai bản vá giúp khắc phục lỗ hổng, thay vì chỉ giảm khả năng bị khai thác.
+
+![](./images/SECTION_01/04_Systems_as_Attack_Vectors/Task_6/4.png)
+
+**Cảnh báo: Trang web của công ty có nguy cơ bị tấn công – Cần hành động ngay!**
+
+**Nội dung cảnh báo:**
+
+Kẻ tấn công đã sử dụng kỹ thuật dò mật khẩu Brute Force để xâm nhập thành công vào trang quản trị của website WordPress thuộc công ty chúng ta.
+
+Sau đó, chúng đã thay thế nội dung trang chủ bằng các liên kết chứa mã độc và quảng cáo cờ bạc.
+
+**Câu hỏi: Cần thực hiện hành động nào?**
+
+1\. Khôi phục website từ các bản sao lưu (Backup) và đóng cảnh báo.
+
+2\. Cập nhật tất cả các thành phần của website lên phiên bản mới nhất.
+
+3\. Thay đổi mật khẩu của tài khoản quản trị viên thành một mật khẩu có độ bảo mật cao hơn.
+
+**Đáp án 3**
+
+![](./images/SECTION_01/04_Systems_as_Attack_Vectors/Task_6/5.png)
+
+**Cảnh báo tình báo mối đe dọa (Threat Intelligence Alert): Cần hành động ngay!**
+
+**Nội dung cảnh báo:**
+
+Một công ty lân cận đã bị tấn công bằng mã độc tống tiền (Ransomware) cách đây một tuần.
+
+Họ cho biết cuộc tấn công bắt nguồn từ việc khai thác lỗ hổng trên thiết bị tường lửa Cisco phiên bản cũ của họ. Công ty này khuyến cáo chúng ta không nên lặp lại sai lầm tương tự và cần tiến hành kiểm tra bảo mật toàn bộ các thiết bị Cisco đang sử dụng.
+
+**Câu hỏi: Cần thực hiện hành động nào?**
+
+1\. Đảm bảo tất cả các thiết bị tường lửa của công ty đã được cập nhật đầy đủ các bản vá bảo mật và không còn tồn tại các lỗ hổng đã được công bố (CVE).
+
+2\. Thay thế toàn bộ thiết bị Cisco bằng các giải pháp thay thế như FortiGate.
+
+3\. Vô hiệu hóa tất cả các thiết bị tường lửa cho đến khi quá trình kiểm tra bảo mật toàn diện hoàn tất.
+
+**Đáp án 1**
+
+![](./images/SECTION_01/04_Systems_as_Attack_Vectors/Task_6/6.png)
+
+**Cảnh báo: Máy tính LPT-01518 có nguy cơ bị tấn công – Cần hành động ngay!**
+
+**Nội dung cảnh báo:**
+
+Bạn phát hiện số lượng sự kiện bảo mật bất thường tăng đột biến từ máy tính xách tay của một nhân viên thiết kế.
+
+Một ứng dụng thiết kế 3D đáng tin cậy đột nhiên bắt đầu thực thi các lệnh CMD độc hại sau khi được cập nhật gần đây.
+
+Bạn cần nhanh chóng lên kế hoạch cho các bước xử lý tiếp theo.
+
+**Câu hỏi: Cần thực hiện hành động nào?**
+
+1\. Quy trách nhiệm cho nhân viên thiết kế vì đã cấu hình sai ứng dụng thiết kế 3D.
+
+2\. Kiểm tra xem ứng dụng thiết kế 3D có tồn tại lỗ hổng bảo mật nghiêm trọng hay không.
+
+3\. Điều tra khả năng xảy ra một cuộc tấn công chuỗi cung ứng (Supply Chain Attack) thông qua bản cập nhật ứng dụng.
+
+**Đáp án 3**
+>Khi các ứng dụng đáng tin cậy đột nhiên bắt đầu có hành vi độc hại sau khi cập nhật, rất có thể đó là một cuộc tấn công chuỗi cung ứng.
+
+![](./images/SECTION_01/04_Systems_as_Attack_Vectors/Task_6/7.png)
+
+![](./images/SECTION_01/04_Systems_as_Attack_Vectors/Task_6/8.png)
+
+**Câu hỏi:** Trong số các biện pháp khắc phục dưới đây, biện pháp nào sẽ mang lại lợi ích lớn nhất cho tổ chức của bạn?
+
+**3. Các biện pháp khắc phục có sẵn (Available Remediation Actions)**
+
+| Biện pháp                                                         | Mô tả                                                                                                     |
+| ----------------------------------------------------------------- | --------------------------------------------------------------------------------------------------------- |
+| **Security Training for IT** (Đào tạo bảo mật cho nhân viên CNTT) | Thường xuyên đào tạo nhân viên CNTT về các lỗi cấu hình bảo mật phổ biến và cách phòng tránh chúng.       |
+| **Patch Management Policy** (Chính sách quản lý bản vá)           | Xây dựng quy trình rõ ràng để xác định, kiểm thử và triển khai các bản vá phần mềm.                       |
+| **Antivirus Protection** (Bảo vệ bằng phần mềm chống mã độc)      | Cài đặt phần mềm chống mã độc đáng tin cậy trên tất cả các hệ thống quan trọng của doanh nghiệp.          |
+| **Secure Password Policy** (Chính sách mật khẩu an toàn)          | Bắt buộc sử dụng mật khẩu mạnh, được tạo tự động cho tất cả tài khoản quản trị viên và tài khoản dịch vụ. |
+| **Website Restrictions** (Hạn chế truy cập website)               | Chặn quyền truy cập công khai vào website của công ty nhằm bảo vệ website khỏi các mối đe dọa.            |
+| **Obscure Server Naming** (Đặt tên máy chủ khó nhận biết)         | Sử dụng tên máy chủ ngẫu nhiên như `X7191` để gây khó khăn cho những kẻ tấn công tiềm năng.               |
+| **Shared Accounts** (Sử dụng tài khoản dùng chung)                | Yêu cầu bộ phận CNTT sử dụng một tài khoản chung duy nhất để đơn giản hóa việc giám sát bảo mật.          |
+
+![](./images/SECTION_01/04_Systems_as_Attack_Vectors/Task_6/9.png)
+
 # SECTION 02 – SOC TEAM INTERNALS
 
 ### Giới thiệu
