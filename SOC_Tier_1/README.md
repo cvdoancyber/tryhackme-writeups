@@ -502,6 +502,60 @@ CVE-2025-53770
 patch
 ```
 
+### Task 5 Misconfigurations
+
+**Misconfigurations - Cấu hình sai**
+
+- Lỗi cấu hình không phải là lỗi phần mềm, thường do nhóm IT gây ra.
+- Bộ phận IT có thể vô tình đưa thêm các lỗ hổng mới vào hệ thống bảo mật.
+- Dưới đây là ví dụ cụ thể về việc một cơ sở dữ liệu có thể bị xâm phạm do cấu hình không an toàn:
+
+![](./images/SECTION_01/04_Systems_as_Attack_Vectors/Task_5/1.svg)
+
+**1. Quá trình xảy ra**
+
+1\. **Cài đặt cơ sở dữ liệu:** Quản trị viên cài đặt phiên bản SQL mới nhất. Ban đầu, hệ thống chưa có lỗ hổng hoặc lỗi cấu hình nào được xác định.
+
+2\. **Lưu trữ dữ liệu nhạy cảm:** Dữ liệu khách hàng được đưa vào cơ sở dữ liệu, chẳng hạn như họ tên, số điện thoại, địa chỉ và thông tin cá nhân.
+
+3\. **Cấu hình mật khẩu yếu:** Quản trị viên đặt mật khẩu là `1111`, quá đơn giản và dễ bị đoán hoặc dò tìm bằng kỹ thuật Brute Force.
+
+4\. **Tắt tường lửa (Firewall):** Quản trị viên vô hiệu hóa tường lửa bảo vệ cơ sở dữ liệu, khiến các kết nối không được kiểm soát chặt chẽ, làm tăng nguy cơ truy cập trái phép.
+
+5\. **Kẻ tấn công khai thác:** Sau một thời gian, kẻ tấn công có thể phát hiện dịch vụ cơ sở dữ liệu đang mở, dò được mật khẩu yếu và truy cập trái phép để đánh cắp dữ liệu khách hàng.
+
+**2. Nguyên nhân chính**
+
+- **Weak Password:** Mật khẩu yếu, dễ bị đoán.
+- **Unrestricted Access:** Không giới hạn truy cập vào cơ sở dữ liệu.
+- **Security Misconfiguration:** Các thiết lập bảo mật không phù hợp tạo ra điểm yếu để kẻ tấn công khai thác.
+
+**3. Biện pháp phòng chống**
+
+- Sử dụng mật khẩu mạnh, duy nhất và bảo vệ tài khoản quản trị.
+- Bật Firewall, chỉ cho phép các địa chỉ IP cần thiết kết nối.
+- Áp dụng nguyên tắc đặc quyền tối thiểu (Least Privilege).
+- Cập nhật hệ thống, giám sát nhật ký và kiểm tra cấu hình bảo mật định kỳ.
+
+
+**Responding to Misconfigurations**
+
+- Kiểm thử xâm nhập.
+- Quét lỗ hổng bảo mật.
+- Kiểm tra cấu hình.
+
+**Câu hỏi 1: Liệu bản vá hệ thống hoặc bản cập nhật phần mềm có thể khắc phục các lỗi cấu hình này không (Có/Không)?**
+
+Đáp án: Không
+
+**Câu hỏi 2: Hoạt động nào liên quan đến một cuộc tấn công mạng được ủy quyền để phát hiện các cấu hình sai?**
+
+Đáp án:
+
+```
+Penetration Testing
+```
+
 # SECTION 02 – SOC TEAM INTERNALS
 
 ### Giới thiệu
