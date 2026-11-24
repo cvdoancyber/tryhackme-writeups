@@ -717,6 +717,50 @@ Tìm hiểu các hoạt động nội bộ của SOC, bao gồm quy trình tiế
 
 ![](./images/SECTION_02/01_SOC_L1_Alert_Triage/Task_1/1.png)
 
+### Task 2 - Events and Alerts
+
+- Chúng ta cần học cách xắp xếp các Events và Alerts:
+
+![](./images/SECTION_02/01_SOC_L1_Alert_Triage/Task_2/1.gif)
+
+**From Events to Alerts**
+
+- Đầu tiên chúng ta cần có Event. Event có thể là: sự kiện đăng nhập của người dùng, khởi chạy tiến trình, tải xuống tệp... Và các Events đó phải các hệ thống như hệ điều hành, tường lửa hoăc nhà cung cấp dịch vụ ghi lại.
+- Các Events này sẽ được chuyển đến một giải pháp bảo mật như SIEM hoặc EDR.
+- Alert sẽ được tạo ra bởi giải pháp bảo mật khi một Event cụ thể hoặc chuỗi Events đáng ngờ xảy ra.
+
+**Alert Management Platforms**
+
+| Giải pháp (Solution)                                                                                                                                             | Ví dụ (Examples)                | Mô tả (Description)                                                                                                                                                                                                                                                           |
+| ---------------------------------------------------------------------------------------------------------------------------------------------------------------- | ------------------------------- | ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| **Hệ thống SIEM** (Security Information and Event Management – Quản lý thông tin và sự kiện bảo mật)                                                             | Splunk ES, Elastic, Wazuh              | SIEM có khả năng quản lý cảnh báo bảo mật mạnh mẽ và là lựa chọn lý tưởng cho phần lớn các đội ngũ vận hành Trung tâm Điều hành An ninh mạng (SOC).                                                                                                                           |
+| **EDR hoặc NDR** (Endpoint Detection and Response – Phát hiện và ứng phó tại thiết bị đầu cuối; Network Detection and Response – Phát hiện và ứng phó trên mạng) | Microsoft Defender, CrowdStrike | Mặc dù EDR và NDR cung cấp các bảng điều khiển cảnh báo riêng, việc sử dụng SIEM hoặc SOAR để quản lý cảnh báo thường được ưu tiên hơn.                                                                                                                                       |
+| **Hệ thống SOAR** (Security Orchestration, Automation and Response – Điều phối, tự động hóa và ứng phó bảo mật)                                                  | Splunk SOAR, Cortex SOAR        | Các đội ngũ SOC quy mô lớn có thể sử dụng SOAR để tổng hợp và quản lý tập trung các cảnh báo từ nhiều giải pháp bảo mật khác nhau.                                                                                                                                            |
+| **Hệ thống ITSM** (IT Service Management – Quản lý dịch vụ CNTT)                                                                                                 | Jira, TheHive                   | Một số đội ngũ có thể xây dựng hệ thống quản lý phiếu yêu cầu hoặc sự cố (Ticket Management) riêng bằng cách sử dụng các giải pháp chuyên dụng. (Ảnh GIF phía trên được lấy từ Trello, một công cụ đơn giản có thể tùy chỉnh để đáp ứng nhu cầu quản lý dịch vụ CNTT – ITSM). |
+
+**L1 Role in Alert Triage**
+
+- Các chuyên viên SOC L1 là tuyến phòng thủ đầu tiên, xử lý cảnh báo nhiều nhất. Chuyên viên phân tích L1 có thể nhận được từ 0 đến 100 cảnh báo mỗi ngày. Tuy nhiên, mọi thành viên trong nhóm SOC đều tham gia vào quá trình phân loại cảnh báo:
+    - SOC L1 Analyst: Xem xét các cảnh báo, phân biệt cảnh báo nguy hiểm và cảnh báo an toàn, thông báo cho SOC L2 Analyst nếu có mối đe dọa thật sự.
+    - SOC L2 Analyst: Tiếp nhận Alert từ SOC L1 và thực hiện phân tích sâu hơn và khắc phục sự cố.
+    - SOC Engineers: Đảm bảo cảnh báo chứa đủ thông tin để phân loại cảnh báo hiệu quả.
+    - SOC Manager: Theo dõi tốc độ và chất lượng phân loại cảnh báo để đảm bảo không bỏ sót các cuộc tấn công thực sự.
+
+**Câu hỏi 1: Bạn thấy bao nhiêu cảnh báo trên bảng điều khiển SOC?**
+
+![](./images/SECTION_02/01_SOC_L1_Alert_Triage/Task_2/2.png)
+
+Đáp án: 2
+
+**Câu hỏi 2: Cảnh báo gần đây nhất mà bạn thấy có tên là gì?**
+
+Đáp án:
+
+```
+Double-Extension File Creation
+```
+
+
 # SECTION 03 – CORE SOC SOLUTIONS
 
 ### Giới thiệu
