@@ -766,11 +766,9 @@ Double-Extension File Creation
 
 ![](./images/SECTION_02/01_SOC_L1_Alert_Triage/Task_3/1.png)
 
-## **Các thuộc tính cơ bản của cảnh báo bảo mật (Security Alert Properties)**
-
-| STT   | Thuộc tính (Property)                                    | Mô tả (Description)                                                                                                                                                                          | Ví dụ (Examples)                                                                                                                                                                                                                                         |
+| STT   | Thuộc tính                                     | Mô tả                                                                                                                                                                           | Ví dụ                                                                                                                                                                                                                                          |
 | ----- | -------------------------------------------------------- | -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| **1** | **Alert Time** (Thời gian cảnh báo)                      | Hiển thị thời điểm cảnh báo được tạo. Cảnh báo thường được kích hoạt sau khi sự kiện thực tế xảy ra vài phút.                                                                                | • Thời gian cảnh báo: 21/03, 15:35.<br>• Thời gian xảy ra sự kiện: 21/03, 15:32.                                                                                                                                                                         |
+| **1** | **Alert Time** (Thời gian cảnh báo)                      | Hiển thị thời điểm cảnh báo được tạo. Cảnh báo thường được kích hoạt sau khi sự kiện thực tế xảy ra vài phút.                                                                                | • Alert Time: March 21, 15:35<br>• Event Time: March 21, 15:32                                                                                                                                                                         |
 | **2** | **Alert Name** (Tên cảnh báo)                            | Cung cấp thông tin tóm tắt về sự việc đã xảy ra, dựa trên tên của quy tắc phát hiện (Detection Rule).                                                                                        | • Đăng nhập từ vị trí bất thường (Unusual Login Location).<br>• Email bị đánh dấu là lừa đảo (Phishing).<br>• Tấn công dò mật khẩu RDP trên Windows (Windows RDP Bruteforce).<br>• Nghi vấn đánh cắp dữ liệu ra bên ngoài (Potential Data Exfiltration). |
 | **3** | **Alert Severity** (Mức độ nghiêm trọng của cảnh báo)    | Xác định mức độ khẩn cấp của cảnh báo. Mức độ này ban đầu được thiết lập bởi các kỹ sư xây dựng quy tắc phát hiện, nhưng có thể được chuyên viên phân tích bảo mật điều chỉnh khi cần thiết. | 🟢 Low / Informational – Thấp / Mang tính thông tin.<br>🟡 Medium / Moderate – Trung bình.<br>🟠 High / Severe – Cao / Nghiêm trọng.<br>🔴 Critical / Urgent – Rất nghiêm trọng / Khẩn cấp.                                                              |
 | **4** | **Alert Status** (Trạng thái cảnh báo)                   | Cho biết cảnh báo đã có người xử lý hay chưa và quá trình phân loại, đánh giá ban đầu (Triage) đã hoàn tất hay chưa.                                                                         | • New / Unassigned – Mới / Chưa được phân công.<br>• In Progress / Pending – Đang xử lý / Đang chờ.<br>• Closed / Resolved – Đã đóng / Đã giải quyết.<br>• Ngoài ra có thể có các trạng thái tùy chỉnh khác.                                             |
@@ -779,6 +777,27 @@ Double-Extension File Creation
 | **7** | **Alert Description** (Mô tả cảnh báo)                   | Giải thích nội dung của cảnh báo, thường được chia thành ba phần ở bên phải giao diện.                                                                                                       | • Cơ chế hoạt động của quy tắc tạo ra cảnh báo.<br>• Lý do hoạt động này có thể là dấu hiệu của một cuộc tấn công.<br>• (Tùy chọn) Hướng dẫn cách phân tích và xử lý ban đầu (Triage) đối với cảnh báo.                                                  |
 | **8** | **Alert Fields** (Các trường thông tin của cảnh báo)     | Cung cấp cho chuyên viên phân tích SOC các thông tin và giá trị liên quan đến sự kiện đã kích hoạt cảnh báo.                                                                                 | • Tên máy chủ bị ảnh hưởng (Affected Hostname).<br>• Dòng lệnh đã được thực thi (Entered Command Line).<br>• Nhiều trường thông tin khác tùy thuộc vào từng loại cảnh báo.                                                                               |
 
+**Câu hỏi 1: Kết quả xử lý cảnh báo "Unusual VPN Login Location" là gì?**
+
+![](./images/SECTION_02/01_SOC_L1_Alert_Triage/Task_3/2.png)
+
+Đáp án: 
+
+```
+False Positive
+```
+
+>Vị trí đăng nhập bất thường không đồng nghĩa với việc tài khoản đã bị xâm nhập
+
+**Câu hỏi 2: Người dùng nào được nhắc đến trong cảnh báo "Unusual VPN Login Location"**
+
+![](./images/SECTION_02/01_SOC_L1_Alert_Triage/Task_3/3.png)
+
+Đáp án:
+
+```
+M.Clark
+```
 
 # SECTION 03 – CORE SOC SOLUTIONS
 
