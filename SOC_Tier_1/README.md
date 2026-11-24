@@ -682,19 +682,19 @@ Bạn cần nhanh chóng lên kế hoạch cho các bước xử lý tiếp theo
 
 # SECTION 02 – SOC TEAM INTERNALS
 
-### Giới thiệu
+**Giới thiệu**
 
 Tìm hiểu các hoạt động nội bộ của SOC, bao gồm quy trình tiếp nhận và xử lý cảnh báo, xây dựng báo cáo, sử dụng tài liệu hỗ trợ điều tra và đánh giá hiệu quả hoạt động của SOC.
 
-### Danh sách bài học
+**Danh sách bài học**
 
-- [ ] 01. SOC L1 Alert Triage
+- [ ] [01. SOC L1 Alert Triage](#01-soc-l1-alert-triage)
 - [ ] 02. SOC L1 Alert Reporting
 - [ ] 03. SOC Workbooks and Lookups
 - [ ] 04. SOC Metrics and Objectives
 - [ ] 05. Introduction to Phishing (Scenario)
 
-### Kiến thức trọng tâm
+**Kiến thức trọng tâm**
 
 - Quy trình phân loại và ưu tiên cảnh báo (Alert Triage).
 - Phân biệt True Positive, False Positive, True Negative và False Negative.
@@ -707,7 +707,17 @@ Tìm hiểu các hoạt động nội bộ của SOC, bao gồm quy trình tiế
 
 ---
 
-## SECTION 03 – CORE SOC SOLUTIONS
+## 01. SOC L1 Alert Triage
+
+### Task 1 - Introduction
+
+-   Cảnh báo(Alert) là khái niệm cốt lõi của SOC.
+-   Việc xử lý cảnh báo đúng cách sẽ quyết định đến việc có thể phát hiện, ngăn chặn, xử lý các nguy cơ an ninh mạng.
+-   Ví dụ về một dashboard SIEM:
+
+![](./images/SECTION_02/01_SOC_L1_Alert_Triage/Task_1/1.png)
+
+# SECTION 03 – CORE SOC SOLUTIONS
 
 ### Giới thiệu
 
@@ -1052,3 +1062,4 @@ Người học cần kết hợp kỹ năng phân tích nhật ký, điều tra 
 - Xây dựng báo cáo điều tra sự cố.
 
 ---
+
